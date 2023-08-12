@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Long-Form-Add Staff-Task Round</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="font">Add New Staff</h2>
+        <div class="line"></div>
+        <div class="subcont">
+            <div class="gen">
+                <div class="headcont">
+                    <div class="1">
+                        <img width="28" height="28" src="https://img.icons8.com/sf-regular/48/1.png" alt="1" />
+                    </div>
+                    <span class="head font" id="genhead">Genral Details</span>
+                    <span class="arrow font" id="arrow" onclick="checkgenstat()">></span>
+                </div>
+                <div class="forcont" id="genforcont">
+                    <form action="/" method="post" id="genform">
+                        <label for="username" class="label font gendata" id="genlabel">Username</label>
+                        <input type="text" placeholder="Enter Your Username" name="username" class="input font gendata">
+                        <label for="fullname" class="label font gendata">Full Name</label>
+                        <input type="text" placeholder="Enter Your Name" name="fullname" class="input font gendata">
+                        <label for="email" class="label font gendata">Email</label>
+                        <input type="email" placeholder="Enter Your Email id" name="email" class="input font gendata">
+                    </form>
+
+                    <div id="genforbut"><button class="font gendata" onclick="nextgen()">Next</button></div>
+                </div>
+            </div>
+            <div class="companydetails">
+                <div class="headcont">
+                    <div class="1">
+                        <img width="28" height="28" src="https://img.icons8.com/sf-regular/48/2.png" alt="2" />
+                    </div>
+                    <span class="head font" id="detailhead">Company Details</span>
+                    <span class="arrow font" id="arrowD" onclick="checkdetailstat()">></span>
+                </div>
+                <div class="forcont">
+                    <form action="/" method="post" id="detailsform">
+                        <div class="grid1">
+                            <div class="labinpgrp">
+                                <label for="companyname" class="label font detaildata" id="detailslabel">Company
+                                    Name</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter Company Name"
+                                    name="companyname" class="input font detaildata">
+                            </div>
+                            <div class="labinpgrp">
+                                <label for="cnj" class="label font detaildata">CNJ</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter CNJ" name="cnj"
+                                    class="input font detaildata">
+                            </div>
+                        </div>
+                        <div class="line detaildata" style="height: 1px; margin-bottom: 5px;"></div>
+                        <label for="accountnumber" class="label font detaildata">Account Number</label>
+                        <input onkeypress="nextdetail()" type="text" placeholder="Enter Account Number"
+                            name="accountnumber" class="input font detaildata">
+                        <div class="grid1">
+                            <div class="labinpgrp">
+                                <label for="ispb" class="label font detaildata" id="detailslabel">ISPB</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter ISPB" name="ispb"
+                                    class="input font detaildata">
+                            </div>
+                            <div class="labinpgrp">
+                                <label for="compecode" class="label font detaildata">CompeCode</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter CompeCode"
+                                    name="compecode" class="input font detaildata">
+                            </div>
+                        </div>
+                        <div class="line detaildata" style="height: 1px; margin-bottom: 5px;"></div>
+                        <label for="issuer" class="label font detaildata">Issuer</label>
+                        <input onkeypress="nextdetail()" type="text" placeholder="Issuer" name="issuer"
+                            class="input font detaildata">
+                        <div class="grid1">
+                            <div class="labinpgrp">
+                                <label for="accounttype" class="label font detaildata" id="detailslabel">Account
+                                    Type</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter Account Type"
+                                    name="accounttype" class="input font detaildata">
+                            </div>
+                            <div class="labinpgrp">
+                                <label for="covenant" class="label font detaildata">Covenant</label>
+                                <input onkeypress="nextdetail()" type="text" placeholder="Enter Covenant"
+                                    name="covenant" class="input font detaildata">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="addacc detaildata font" onclick="add()">+ Add Another Account</div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="butcont">
+            <Button class="bottomButton font" onclick="submit()">Submit</Button>
+            <Button class="bottomButton font" onclick="refresh()">Cancle</Button>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e6e2e2;
+}
+.font{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 30vw;
+    padding: 15px;
+}
+.container h2{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.line{
+    background-color: rgb(128 128 128 / 19%);
+    height: 2px;
+    width: 100%;
+}
+.subcont{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.headcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.headcont span.head{
+    font-size: 14px;
+    margin-bottom: 3px;
+    width: 85%;
+}
+.headcont span.arrow{
+    font-size: 16px;
+    margin-bottom: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: 0.5s ease;
+    /* rotate: 90deg; */
+}
+.forcont{
+    margin-left: 10%;
+}
+#genform{
+    display: flex;
+    flex-direction: column;
+}
+#detailsform{
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.input{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 10px;
+}
+.arrow:hover{
+    border-radius: 100%;
+    background-color: lightgray;
+}
+.grid1{
+    display: flex;
+    flex-direction: row;
+    /* gap: 5%; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.labinpgrp{
+    display: flex;
+    flex-direction: column;
+}
+.gendata,.detaildata{
+    display: none;
+}
+input{
+    border-radius: 5px;
+    border-color: #d3d3d34a;
+}
+.bottomButton{
+    margin-top: 15px;
+}
+.butcont{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+}
+button{
+    border-color: black;
+    border-radius: 4px;
+}
+button:hover{
+    background-color: black;
+    color: whitesmoke;
+    transition: .5s ease;
+}
+.submithead{
+    font-size: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container{
+        width: -webkit-fill-available;
+    }
+    .labinpgrp{
+        width: -webkit-fill-available;
+    }
+}
