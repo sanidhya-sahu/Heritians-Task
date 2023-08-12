@@ -136,5 +136,5 @@ function refresh(){
     location.reload();
 }
 function submit(){
-    location.replace((window.location.href).replace('index.html','submit.html'))
+    location.replace(window.location.href+"submit.html")
 }
